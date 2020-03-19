@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18-Mar-2020, 2:40:44 pm by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.niit.hibernate.webapp.Emp" table="emp111">
+		
+		<id name="id">
+		<generator class="increment"></generator>
+		</id>
+		<property name="name"></property>
+
+		<component name="address" class="com.niit.hibernate.webapp.Address">
+		<property name="city"></property>
+		<property name="country"></property>
+		<property name="pincode"></property>
+		</component>
+
+	</class>
+</hibernate-mapping>
